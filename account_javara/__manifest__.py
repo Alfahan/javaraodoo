@@ -12,6 +12,7 @@
     'depends': [
         'account_reports',
         'sale',
+        'pos_sale',
     ],
     'data': [
         'wizard/view_aged_partner_wizard.xml',

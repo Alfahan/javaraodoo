@@ -8,7 +8,7 @@
     'website': 'https://www.arkana.co.id',
     'description': """Custom Product Template for Javara""",
     'depends': [
-        'stock',
+        'stock','sale','point_of_sale'
     ],
     'data': [
         'security/ir.model.access.csv',

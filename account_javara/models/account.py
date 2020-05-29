@@ -1,14 +1,14 @@
 from odoo import models, api, fields, _
 from odoo.tools.misc import format_date
 from dateutil.relativedelta import relativedelta
-
+from datetime import datetime
 
 class AccountMoveLine(models.Model):
     _inherit = "account.move.line"
 
     date_maturity_ttf = fields.Date(
         string='Date Maturity TTF', compute='_compute_date_maturity_ttf', store=True)
-    team_id = fields.Many2one(string='Sales Channel',
+    team_id = fields.Many2one(string='Sales Channel (false)',
                               related='partner_id.team_id', store=True)
 
     @api.multi
